@@ -4,13 +4,13 @@ public class Produto {
 
     private String name;
     private String discription;
-    private String price;
-    private boolean avaliable;
+    private double price;
+    private String avaliable;
 
 public Produto(){
 }
 
-    public Produto(String name, String discription, String price, boolean avaliable) {
+    public Produto(String name, String discription, double price, String avaliable) {
         this.name = name;
         this.discription = discription;
         this.price = price;
@@ -33,19 +33,19 @@ public Produto(){
         this.discription = discription;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public boolean isAvaliable() {
+    public String isAvaliable() {
         return avaliable;
     }
 
-    public void setAvaliable(boolean avaliable) {
+    public void setAvaliable(String avaliable) {
         this.avaliable = avaliable;
     }
 
